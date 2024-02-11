@@ -10,7 +10,7 @@ word_q_add<- function(a=NULL, b=NULL, c=NULL){
 }
 
 word_q_coin<- function(dollar=NULL, quarter=NULL, dime=NULL, nickel=NULL, cent=NULL){
-  questions <-c(list(
+  questions <-list(c(
     paste('Lucas has', dollar, 'one-dollar bills,', dime, 'dimes and', nickel ,'nickels. How much money does Lucas have?'),
     dollar+0.1*dime+0.05*nickel))
   return(questions)
